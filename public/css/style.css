@@ -25,6 +25,9 @@ body {
     background: #f4f4f4;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
 /* Navbar */
 .navbar {
     background: #333;
@@ -37,7 +40,7 @@ body {
 
 /* Showcase */
 .showcase {
-    height: 450px;
+    height: 300px;
     width: 100%;
     background: var(--gradient-bg);
 }
@@ -60,17 +63,22 @@ body {
 
 .showcase form input,
 form select {
-    font-size: 20px;
+    font-size: 16px;
     width: 500px;
-    max-width: 500px;
-    padding: 1rem;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
     margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+    .showcase form input,
+    form select {
+        width: 300px;
+    }
 }
 
 form button {
-    font-size: 20px;
+    font-size: 16px;
     padding: 1rem 2rem;
     border: 3px solid var(--primary-color);
     background-color: #fde8c9;

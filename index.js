@@ -11,5 +11,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //app listen port 5000
-app.use('/openai', require('./routes/openaiRoutes'));
+app.use('/openai', require('./server/controllers/routes/openaiRoutes'));
 app.listen(port, () => console.log(`Server started on port ${port}`));
